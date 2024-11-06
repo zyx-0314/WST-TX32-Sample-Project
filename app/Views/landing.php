@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div>
-    <h1>Home</h1>
+    <h1><?= $pageH1 ?></h1>
 </div>
 <section class="hero">
     <div class="left">

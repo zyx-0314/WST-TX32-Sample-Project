@@ -5,5 +5,5 @@
         <a href="<?= base_url() . 'catalog' ?>" class="btn">Catalogs</a>
         <a href="<?= base_url() . 'about' ?>" class="btn">About</a>
     </nav>
-    <a href="" class="btn action"></a>
+    <a href="" class="btn action">Sign up</a>
 </header>

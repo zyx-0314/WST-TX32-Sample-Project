@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 2.5rem;
+    background: rgba(255, 255, 255, 0.543);
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        border-radius: 5px;
+        background:springgreen;
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+}
+

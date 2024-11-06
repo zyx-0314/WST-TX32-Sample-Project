@@ -6,21 +6,43 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('landing');
+        $data = [
+            'title' => 'Landing Page',
+            'pageH1'=> 'This is the Landing Page',
+            'css'=> '',
+        ];
+
+        return view('landing', $data);
     }
 
     public function landing(): string
     {
-        return view('landing');
+        $data = [
+            'title' => 'Landing Page',
+            'pageH1'=> 'This is the Landing Page',
+            'css'=> ['landing.css', 'landing2.css'],
+        ];
+
+        return view('landing', $data);
     }
 
     public function about(): string
     {
-        return view('about');
+        $data = [
+            'title' => 'About Page',
+            'css'=> [''],
+        ];
+        
+        return view('about', $data);
     }
 
     public function catalog(): string
     {
-        return view('product_catalog');
+        $data = [
+            'title' => 'Catalog Page',
+            'css'=> [''],
+        ];
+
+        return view('product_catalog', $data);
     }
 }

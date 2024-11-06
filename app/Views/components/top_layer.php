@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mima</title>
-
-    <?= $this->include('components/css/nav') ?>
+    <title><?= esc($title) ?></title>
+    <link rel="stylesheet" href="<?php echo CSS.'header.css'; ?>">
+    <?php foreach ($css as $key) :?>
+        <link rel="stylesheet" href="<?php echo CSS.$key; ?>">
+    <?php endforeach ?>
 </head>
 <body>
