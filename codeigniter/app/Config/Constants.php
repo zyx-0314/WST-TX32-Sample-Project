@@ -80,8 +80,8 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125);    // highest a
 
 defined('BASEURL')             || define('BASEURL', 'http://localhost:8010/');
 defined('CSS')                 || define('CSS', BASEURL.'public/assets/css/');
-defined('JS')                  || define('JS', BASEURL.'public/js/');
-defined('IMAGE')               || define('IMAGE', BASEURL.'public/img/');
+defined('JS')                  || define('JS', BASEURL.'public/assets/js/');
+defined('IMAGE')               || define('IMAGE', BASEURL.'public/assets/img/');
 
 /**
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_LOW instead.

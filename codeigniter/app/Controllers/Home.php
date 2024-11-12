@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UserModel;
 
 class Home extends BaseController
 {
@@ -16,11 +17,25 @@ class Home extends BaseController
 
     public function landing(): string
     {
+        $userModel = new UserModel();
+    
+        $users = [];
+        $message = '';
+    
+        try {
+            $users = $userModel->findAll();
+            $message = count($users) > 0 ? 'Users retrieved successfully.' : 'No users found.';
+        } catch (\Exception $e) {
+            $message = 'Error retrieving users: ' . $e->getMessage();
+        }
+    
         $data = [
             'title' => 'Landing Page',
             'css' => ['landing.css', 'landing2.css'],
+            'users' => $users,
+            'message' => $message
         ];
-
+    
         return view('landing', $data);
     }
 

@@ -44,5 +44,7 @@
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline"><?php getenv("company_name")?></a>. All Rights Reserved.</span>
   </div>
 </footer>
+
+<script src="<?php echo JS . 'modal.js' ?>"></script>
 </body>
 </html>
