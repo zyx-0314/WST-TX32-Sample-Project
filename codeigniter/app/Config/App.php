@@ -6,6 +6,11 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
+    public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'; // or your session driver
+    public $sessionCookieName = 'ci_session';
+    public $sessionExpiration = 7200; // Session expiration time (in seconds)
+    
+
     /**
      * --------------------------------------------------------------------------
      * Base Site URL

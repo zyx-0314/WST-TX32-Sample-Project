@@ -2,6 +2,6 @@
 
 <?= $this->section('content') ?>
 <div>
-  <h1>catalog</h1>
+  <h1>contact</h1>
 </div>
 <?= $this->endSection('content') ?>

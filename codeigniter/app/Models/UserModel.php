@@ -6,9 +6,11 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'users';  // Ensure this matches your database table name
-    protected $primaryKey = 'id';  // Replace with the actual primary key of your table
-    protected $allowedFields = ['name', 'email', 'password'];  // Add columns of the users table here
+    protected $table = 'users';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['username', 'email', 'password', 'active'];
 
-    // Specify any other properties like timestamps or validation rules as needed
+    protected $returnType = 'array';
+    protected $useTimestamps = true;
+
 }

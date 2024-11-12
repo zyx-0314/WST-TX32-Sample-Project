@@ -11,7 +11,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <?php foreach ($css as $key) :?>
-        <link rel="stylesheet" href="<?php echo CSS.$key; ?>">
+        <?php if ($key != "") :?>
+            <link rel="stylesheet" href="<?php echo CSS.$key; ?>">
+        <?php endif ?>
     <?php endforeach ?>
 </head>
 <body>
