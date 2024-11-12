@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: codeigniter_wst_1
+    ports:
+      - "8010:80"
+    volumes:
+      - ./codeigniter:/var/www/html
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: training
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: codeigniter_db_wst_1
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: training
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rpassword # Root password here
+    ports:
+      - "3310:3306"
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: codeigniter_phpmyadmin_wst_1
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_USER: user
+      PMA_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rpassword
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
