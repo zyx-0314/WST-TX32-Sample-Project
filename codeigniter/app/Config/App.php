@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost/WST-TX32-P1/';
+    public string $baseURL = 'http://localhost:8010/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

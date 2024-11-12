@@ -8,8 +8,7 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Landing Page',
-            'pageH1'=> 'This is the Landing Page',
-            'css'=> '',
+            'css' => '',
         ];
 
         return view('landing', $data);
@@ -19,8 +18,7 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Landing Page',
-            'pageH1'=> 'This is the Landing Page',
-            'css'=> ['landing.css', 'landing2.css'],
+            'css' => ['landing.css', 'landing2.css'],
         ];
 
         return view('landing', $data);
@@ -30,9 +28,9 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'About Page',
-            'css'=> [''],
+            'css' => [''],
         ];
-        
+
         return view('about', $data);
     }
 
@@ -40,9 +38,39 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Catalog Page',
-            'css'=> [''],
+            'css' => [''],
         ];
 
         return view('product_catalog', $data);
+    }
+
+    public function team(): string
+    {
+        $data = [
+            'title' => 'Team Page',
+            'css' => [''],
+        ];
+
+        return view('team', $data);
+    }
+
+    public function contact(): string
+    {
+        $data = [
+            'title' => 'Contact Page',
+            'css' => [''],
+        ];
+
+        return view('contact', $data);
+    }
+
+    public function features(): string
+    {
+        $data = [
+            'title' => 'Features Page',
+            'css' => [''],
+        ];
+
+        return view('features', $data);
     }
 }
