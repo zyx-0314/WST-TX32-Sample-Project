@@ -7,11 +7,11 @@
   <a href="https://github.com/zyx-0314/">
     <img src="./assets/nyebe_logo_wt_250px.png" alt="Nyebe" width="130" height="130">
   </a>
-  <h3 align="center">DataLogo: A Demo Payment Solution</h3>
+  <h3 align="center">DataLogo: A Demo IT Solution</h3>
 </div>
 
 <div align="center">
-  Experience a simplified payment process with DataLogo, showcasing the capabilities of CodeIgniter 4 and Tailwind CSS.
+  Experience a simplified IT process with DataLogo, showcasing the capabilities of CodeIgniter 4 and Tailwind CSS.
 </div>
 
 <br/>
@@ -39,7 +39,7 @@
 
 ## Overview
 
-**DataLogo** is a demo payment solution developed by an IT company, intended to illustrate a simplified payment platform using CodeIgniter 4 and Tailwind CSS. This project serves as a prototype for online payment processing, focusing on user-friendliness and security in transaction handling.
+**DataLogo** is a demo IT solution developed, intended to illustrate a simplified payment platform using CodeIgniter 4 and Tailwind CSS. This project serves as a prototype for online payment processing, focusing on user-friendliness and security in transaction handling.
 
 ### Key Components
 
