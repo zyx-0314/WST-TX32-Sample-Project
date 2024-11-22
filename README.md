@@ -16,6 +16,8 @@
 
 <br/>
 
+[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/ad3d0442-54dd-4be7-b000-5fa0d4cdce76.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/ad3d0442-54dd-4be7-b000-5fa0d4cdce76)
+
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WST-TX32-Demo-Project)
 
 ---
